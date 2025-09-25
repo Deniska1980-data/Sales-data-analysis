@@ -26,14 +26,15 @@ Dataset **Sales.csv** obsahuje transakční data se sloupci:
 - **Order Status**  
 - **Customer ID**
 
-🔹 Sample Data Preview / Ukázka dat
-Product Name          Product Category   Order Quantity   Order Total   Product Price   Payment Method
-------------------------------------------------------------------------------------------------------
-Endurain Enduraille   Road Bike          1                2600          2600            Credit Card
-LittleBalancer 1000   Kids Bike          2                 400           200            Credit Card
-LittleBalancer 2000   Kids Bike          1                 200           200            Paypal
-SpeedMaster 1000      Mountain Bike      3                4500          1500            Credit Card
-AeroSpeed 1000        Road Bike          2                8400          4200            Paypal
+## 📊 Sample Data Preview / Ukázka dat
+
+| Product Name            | Product Category | Order Quantity | Order Total | Product Price | Payment Method |
+|-------------------------|------------------|----------------|-------------|---------------|----------------|
+| Endurain Enduraille 1000| Road Bike        | 1              | 2600        | 2600          | Credit Card    |
+| LittleBalancer 1000     | Kids Bike        | 2              | 400         | 200           | Credit Card    |
+| LittleBalancer 2000     | Kids Bike        | 1              | 200         | 200           | Paypal         |
+| SpeedMaster 1000        | Mountain Bike    | 3              | 4500        | 1500          | Credit Card    |
+| AeroSpeed 1000          | Road Bike        | 2              | 8400        | 4200          | Paypal         |
 
 (Data jsou fiktivní, vytvořená pouze pro účely cvičení.)
 
