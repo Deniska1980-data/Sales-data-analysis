@@ -147,5 +147,6 @@ Average product prices and customer segmentation / Průměrné ceny a segmentace
 
 ## 📜 Copyright
 
-© 09/2025 by Denisa
+© 09/2025 by Denisa Pitnerova
+
 (využívám poznatky z kurzů Python for Everybody od Michigan University přes Coursera a také poznatky z kurzu DaPython od PyLadies).
