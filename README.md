@@ -4,8 +4,6 @@ This project demonstrates a basic sales dataset analysis with Python using panda
 
 Tento projekt ukazuje základní analýzu prodejních dat v Pythonu s využitím pandas pro práci s daty a matplotlib pro vizualizace.
 
-Cílem projektu je procvičit si základy práce s daty – od načtení CSV souboru, přes filtrování a vyhledávání klíčových metrik, až po jednoduché grafy.
-
 ## 📂 Project Structure / Struktura projektu
 
 sales_analysis.ipynb → Jupyter notebook (exploration, filtering, analysis, visualization)
