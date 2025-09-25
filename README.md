@@ -1,30 +1,31 @@
-🐍📊 Sales Data Analysis / Analýza prodejních dat
+# 🐍📊 Sales Data Analysis / Analýza prodejních dat
 
 This project demonstrates a basic sales dataset analysis with Python using pandas for data manipulation and matplotlib for visualization.
 Tento projekt ukazuje základní analýzu prodejních dat v Pythonu s využitím pandas pro práci s daty a matplotlib pro vizualizace.
 
 Cílem projektu je procvičit si základy práce s daty – od načtení CSV souboru, přes filtrování a vyhledávání klíčových metrik, až po jednoduché grafy.
 
-📂 Project Structure / Struktura projektu
+## 📂 Project Structure / Struktura projektu
 
 sales_analysis.ipynb → Jupyter notebook (exploration, filtering, analysis, visualization)
-
 app.py → čistý Python skript s analýzou (ready to run)
-
 Sales.csv → dataset (input data)
-
 img/ → exportované grafy (JPG/PNG)
 
-🧾 Data Overview / Popis dat
+## Columns
+The dataset **Sales.csv** contains transactional sales data with columns:  
+Dataset **Sales.csv** obsahuje transakční data se sloupci:  
 
-The dataset Sales.csv contains transactional sales data with columns:
-Dataset Sales.csv obsahuje transakční data se sloupci:
-
-Product Name, Product Category, Product Subcategory
-
-Order Quantity, Order Total, Product Price
-
-Payment Method, Order Date, Order Status, Customer ID
+- **Product Name**  
+- **Product Category**  
+- **Product Subcategory**  
+- **Order Quantity**  
+- **Order Total**  
+- **Product Price**  
+- **Payment Method**  
+- **Order Date**  
+- **Order Status**  
+- **Customer ID**
 
 🔹 Sample Data Preview / Ukázka dat
 Product Name          Product Category   Order Quantity   Order Total   Product Price   Payment Method
@@ -37,26 +38,19 @@ AeroSpeed 1000        Road Bike          2                8400          4200    
 
 (Data jsou fiktivní, vytvořená pouze pro účely cvičení.)
 
-🔑 Analysis Workflow / Postup analýzy
+## 🔑 Analysis Workflow / Postup analýzy
 
 Data exploration / Průzkum dat
-
 Preview (head, columns, index)
-
 Filtering by product price, quantity, payment method
-
 Kontrola unikátních kategorií produktů
-
 Business metrics / Klíčové metriky
 
-Identification of:
+## Identification of:
 
 Top revenue product / Nejvyšší tržby (idxmax on Order Total)
-
 Lowest revenue product / Nejnižší tržby (idxmin on Order Total)
-
 Top selling product by quantity / Nejvyšší prodej podle množství)
-
 Lowest selling product / Nejnižší prodej
 
 ## 📈 Visualizations / Vizualizace
@@ -66,8 +60,7 @@ Lowest selling product / Nejnižší prodej
 ### Sales Comparison / Porovnání prodejů
 ![Top vs. Low Sales](Nejvyšší_nejnižší_prodej.JPG)
 
-
-📊 Key Results / Hlavní výsledky
+## 📊 Key Results / Hlavní výsledky
 | Metric / Metrika                                 | Product / Produkt   | Value / Hodnota |
 | ------------------------------------------------ | ------------------- | --------------- |
 | **Highest revenue / Nejvyšší tržby**             | AeroSpeed 1000      | **8400 CZK**    |
@@ -75,44 +68,38 @@ Lowest selling product / Nejnižší prodej
 | **Top sales volume / Nejvyšší prodej (kusy)**    | SpeedMaster 1000    | **3 units**     |
 | **Lowest sales volume / Nejnižší prodej (kusy)** | TrailBlazer 2000    | **1 unit**      |
 
-
-📈 Visualizations / Vizualizace
-Revenue Comparison / Porovnání tržeb
-
-Sales Comparison / Porovnání prodejů
-
-💻 Example Code / Ukázka kódu
+## 💻 Example Code / Ukázka kódu
 🔹 Data Exploration & Filtering / Průzkum a filtrování
 import pandas as pd
 
-# Load dataset
+## Load dataset
 df = pd.read_csv("Sales.csv", sep=";")
 
-# Basic preview
+## Basic preview
 print(df.head())
 print(df.columns)
 
-# Filtering example: expensive products paid by Credit Card
+## Filtering example: expensive products paid by Credit Card
 filtered = df[(df["Product Price"] > 5000) & (df["Payment Method"] == "Credit Card")]
 print(filtered[["Product Name", "Product Price", "Payment Method"]])
 
-🔹 Business Metrics / Klíčové metriky
-# Top revenue product
+## 🔹 Business Metrics / Klíčové metriky
+## Top revenue product
 top_revenue = df.loc[df["Order Total"].idxmax(), ["Product Name", "Order Total"]]
 
-# Lowest revenue product
+## Lowest revenue product
 low_revenue = df.loc[df["Order Total"].idxmin(), ["Product Name", "Order Total"]]
 
-# Top sales volume
+## Top sales volume
 top_sales = df.loc[df["Order Quantity"].idxmax(), ["Product Name", "Order Quantity"]]
 
-# Lowest sales volume
+## Lowest sales volume
 low_sales = df.loc[df["Order Quantity"].idxmin(), ["Product Name", "Order Quantity"]]
 
-🔹 Visualization / Vizualizace
+## 🔹 Visualization / Vizualizace
 import matplotlib.pyplot as plt
 
-# Top vs. low revenue chart
+## Top vs. low revenue chart
 products = [top_revenue["Product Name"], low_revenue["Product Name"]]
 values = [top_revenue["Order Total"], low_revenue["Order Total"]]
 colors = ["seagreen", "salmon"]
@@ -124,54 +111,41 @@ for i, v in enumerate(values):
 plt.savefig("img/top_vs_low_revenue.png")
 plt.show()
 
-▶️ How to Run / Jak spustit
-1 Clone the repository / Naklonujte si repozitář:
+## ▶️ How to Run / Jak spustit
+1. Clone the repository / Naklonujte si repozitář:
 git clone https://github.com/<your_name>/<repo_name>.git
 cd <repo_name>
 
-2 Install required libraries / Nainstalujte knihovny:
+2. Install required libraries / Nainstalujte knihovny:
 pip install pandas matplotlib
 
-3 Run the notebook or script / Spusťte notebook nebo skript:
-jupyter notebook sales_analysis.ipynb
+3. Run the notebook or script / Spusťte notebook nebo skript:
+jupyter notebook sales_analysis.ipynb   or/nebo   python app.py
 
-or/nebo
+4. Dataset Sales.csv is included / Dataset Sales.csv je součástí projektu.
 
-python app.py
-
-4 Dataset Sales.csv is included / Dataset Sales.csv je součástí projektu.
-
-🛠 Tools & Libraries / Nástroje
+## 🛠 Tools & Libraries / Nástroje
 
 Deepnote → cloud environment for notebooks / cloudové prostředí pro notebooky
-
 Python 3.10 → programming language / programovací jazyk
-
 pandas → data manipulation / práce s daty
-
 matplotlib → visualization / vizualizace
 
-🚀 What I Learned / Co jsem se naučila
+## 🚀 What I Learned / Co jsem se naučila
 
 Practical usage of idxmax and idxmin for identifying key records
-
 Combining pandas and matplotlib for clear visual outputs
-
 Creating custom filters (e.g. price + payment method)
-
 Adding annotations and styling to charts
-
 Zvládnutí základů Pythonu pro datovou analýzu – krok po kroku, bez přeskakování
 
-🔮 Future Work / Další kroky
+## 🔮 Future Work / Další kroky
 
 Time series analysis of orders / Analýza objednávek v čase
-
 Grouping by product category and payment method / Seskupování podle kategorií a platební metody
-
 Average product prices and customer segmentation / Průměrné ceny a segmentace zákazníků
 
-📜 Copyright
+## 📜 Copyright
 
 © 09/2025 by Denisa
 (využívám poznatky z kurzů Python for Everybody od Michigan University přes Coursera a také poznatky z kurzu DaPython od PyLadies).
