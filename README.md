@@ -111,7 +111,7 @@ for i, v in enumerate(values):
 plt.savefig("img/top_vs_low_revenue.png")
 plt.show()
 
-Matplotlib zatiaľ ešte neovládam úplne, ale postupne sa učím a rozširuji sve schopnosti.	
+⚡ Tento projekt je můj první krok s matplotlib – v Power BI pracuji častěji, ale Python se učím krok po kroku. Matplotlib zatiaľ ešte neovládam úplne, ale postupne sa učím a rozširuji sve schopnosti.
 
 ## ▶️ How to Run / Jak spustit
 1. Clone the repository / Naklonujte si repozitář:
@@ -140,13 +140,13 @@ Combining pandas and matplotlib for clear visual outputs
 Creating custom filters (e.g. price + payment method)
 Adding annotations and styling to charts
 
-Zvládnutí základů Pythonu pro datovou analýzu – krok po kroku, bez přeskakování
+Zvládnutí základů Pythonu pro datovou analýzu – krok po kroku, bez přeskakováni.
 
 ## 🔮 Future Work / Další kroky
-
-Time series analysis of orders / Analýza objednávek v čase
-Grouping by product category and payment method / Seskupování podle kategorií a platební metody
-Average product prices and customer segmentation / Průměrné ceny a segmentace zákazníků
+- Analýza časových trendů prodejů (Order Date → trend v čase)  
+- Agregace podle kategorií produktů pomocí `groupby`  
+- Výpočet průměrných cen podle kategorií  
+- Vyzkoušet interaktivní vizualizace (Plotly, Seaborn)
 
 ## 📜 Copyright
 
