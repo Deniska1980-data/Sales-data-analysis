@@ -1,4 +1,4 @@
-# 🐍📊 Sales Data Analysis / Analýza prodejních dat
+## 🐍📊 Sales Data Analysis / Analýza prodejních dat
 
 This project demonstrates a basic sales dataset analysis with Python using pandas for data manipulation and matplotlib for visualization.
 
@@ -6,10 +6,10 @@ Tento projekt ukazuje základní analýzu prodejních dat v Pythonu s využitím
 
 ## 📂 Project Structure / Struktura projektu
 
-sales_analysis.ipynb → Jupyter notebook (exploration, filtering, analysis, visualization)
-app.py → čistý Python skript s analýzou (ready to run)
-Sales.csv → dataset (input data)
-img/ → exportované grafy (JPG/PNG)
+**sales_analysis.ipynb** → **Jupyter notebook** (exploration, filtering, analysis, visualization)
+**app.py** → čistý Python skript s analýzou (ready to run)
+**Sales.csv** → dataset (input data)
+**img** → exportované grafy (JPG)
 
 ## Columns
 The dataset **Sales.csv** contains transactional sales data with columns:  
@@ -74,7 +74,9 @@ import pandas as pd
 
 ## Load dataset and Basic preview
 df = pd.read_csv("Sales.csv", sep=";")
+
 print(df.head())
+
 print(df.columns)
 
 ## Filtering example: expensive products paid by Credit Card
@@ -108,6 +110,8 @@ for i, v in enumerate(values):
     plt.text(i, v + 100, str(v), ha="center", fontsize=10, fontweight="bold")
 plt.savefig("img/top_vs_low_revenue.png")
 plt.show()
+
+Matplotlib zatiaľ ešte neovládam úplne, ale postupne sa učím a rozširuji sve schopnosti.	
 
 ## ▶️ How to Run / Jak spustit
 1. Clone the repository / Naklonujte si repozitář:
