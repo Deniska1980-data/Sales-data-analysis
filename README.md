@@ -72,10 +72,8 @@ Lowest selling product / Nejnižší prodej
 🔹 Data Exploration & Filtering / Průzkum a filtrování
 import pandas as pd
 
-## Load dataset
+## Load dataset and Basic preview
 df = pd.read_csv("Sales.csv", sep=";")
-
-## Basic preview
 print(df.head())
 print(df.columns)
 
