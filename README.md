@@ -1,6 +1,7 @@
 # 🐍📊 Sales Data Analysis / Analýza prodejních dat
 
 This project demonstrates a basic sales dataset analysis with Python using pandas for data manipulation and matplotlib for visualization.
+
 Tento projekt ukazuje základní analýzu prodejních dat v Pythonu s využitím pandas pro práci s daty a matplotlib pro vizualizace.
 
 Cílem projektu je procvičit si základy práce s daty – od načtení CSV souboru, přes filtrování a vyhledávání klíčových metrik, až po jednoduché grafy.
@@ -137,6 +138,7 @@ Practical usage of idxmax and idxmin for identifying key records
 Combining pandas and matplotlib for clear visual outputs
 Creating custom filters (e.g. price + payment method)
 Adding annotations and styling to charts
+
 Zvládnutí základů Pythonu pro datovou analýzu – krok po kroku, bez přeskakování
 
 ## 🔮 Future Work / Další kroky
