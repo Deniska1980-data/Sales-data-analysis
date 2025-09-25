@@ -59,13 +59,12 @@ Top selling product by quantity / Nejvyšší prodej podle množství)
 
 Lowest selling product / Nejnižší prodej
 
-Visualization / Vizualizace
+## 📈 Visualizations / Vizualizace
+### Revenue Comparison / Porovnání tržeb
+![Top vs. Low Revenue](Nejvyšší_nejnižší_tržba.JPG)
 
-Bar charts comparing highest vs. lowest revenue
-
-Grafy nejvyšších vs. nejnižších prodejů (množství kusů)
-
-Customized colors, labels, annotations
+### Sales Comparison / Porovnání prodejů
+![Top vs. Low Sales](Nejvyšší_nejnižší_prodej.JPG)
 
 
 📊 Key Results / Hlavní výsledky
